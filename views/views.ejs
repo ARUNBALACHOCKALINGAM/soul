@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="et-hero-tabs">
+      
+      <h1>Soul</h1>
+      <h3>We are here to make you feel better</h3>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-es6">Questionnarie</a>
+        <a class="et-hero-tab" href="#tab-flexbox">About us</a>
+        <a class="et-hero-tab" href="#tab-react">Contact us</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <section class="questionnarie" id="tab-es6">
+        <section class="form">
+          <form action="/enter" method="POST" autocomplete="off">
+            <div id="askname">
+              <p>Tell us your name:</p>
+              <input class="textbox" type="text" id="name" name="name" />
+            </div>
+            <div class="questionone" id="questionone">
+              <p>How are you feeling lately</p>
+              <label class="radio" for="sad">
+                <input
+                  type="radio"
+                  name="optradio"
+                  id="sad"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Sad </label
+              ><br />
+              <label class="radio" for="happy">
+                <input
+                  type="radio"
+                  name="optradio"
+                  id="happy"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Happy
+              </label>
+            </div>
+            <div id="questiontwo">
+              <p>Have you excercised lately</p>
+              <label class="radio" for="q2a">
+                <input
+                  type="radio"
+                  name="active"
+                  id="q2a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q2b">
+                <input
+                  type="radio"
+                  name="active"
+                  id="q2b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionthree">
+              <p>Are you working on something meaningful</p>
+              <label class="radio" for="q3a">
+                <input
+                  input
+                  type="radio"
+                  name="work"
+                  value="1"
+                  id="q3a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q3b">
+                <input
+                  type="radio"
+                  name="work"
+                  id="q3b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionfour">
+              <p>Are you working on something meaningful</p>
+              <label class="radio" for="q4a">
+                <input
+                  input
+                  type="radio"
+                  name="help"
+                  value="1"
+                  id="q4a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q4b">
+                <input
+                  type="radio"
+                  name="help"
+                  id="q4b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionfive">
+              <p>do you think you're eating healthy</p>
+              <label class="radio" for="q5a">
+                <input
+                  input
+                  type="radio"
+                  name="food"
+                  value="1"
+                  id="q5a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q5b">
+                <input
+                  type="radio"
+                  name="food"
+                  id="q5b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionsix">
+              <p>do you sleep 7-8 hours</p>
+              <label class="radio" for="q6a">
+                <input
+                  input
+                  type="radio"
+                  name="sleep"
+                  id="q6a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q6b">
+                <input
+                  type="radio"
+                  name="sleep"
+                  id="q6b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionsev">
+              <p>
+                Do you ever feel that you’ve been affected by feelings of
+                edginess, anxiety, or nerves?
+              </p>
+              <label class="radio" for="q7a">
+                <input
+                  input
+                  type="radio"
+                  name="anxiety"
+                  id="q7a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q7b">
+                <input
+                  type="radio"
+                  name="anxiety"
+                  id="q7b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionei">
+              <p>
+                Have you ever experienced an ‘attack’ of fear, anxiety, or
+                panic?
+              </p>
+              <label class="radio" for="q8a">
+                <input
+                  input
+                  type="radio"
+                  name="attack"
+                  id="q8a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q8b">
+                <input
+                  type="radio"
+                  name="attack"
+                  id="q8b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionni">
+              <p>
+                Do feelings of anxiety or discomfort around others bother you?
+              </p>
+              <label class="radio" for="q9a">
+                <input
+                  input
+                  type="radio"
+                  name="others"
+                  value="1"
+                  id="q9a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q9b">
+                <input
+                  type="radio"
+                  name="others"
+                  id="q9b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+            <div id="questionte">
+              <p>
+                How often have you felt as though the future was bleak, over the
+                past few weeks?
+              </p>
+              <label class="radio" for="q10a">
+                <input
+                  input
+                  type="radio"
+                  name="futu"
+                  value="1"
+                  id="q10a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q10b">
+                <input
+                  type="radio"
+                  name="futu"
+                  id="q10b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionel">
+              <p>
+                Do feelings of anxiety or discomfort around others bother you?
+              </p>
+              <label class="radio" for="q11a">
+                <input
+                  input
+                  type="radio"
+                  name="discomfort"
+                  id="q11a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q11b">
+                <input
+                  type="radio"
+                  name="discomfort"
+                  id="q11b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+          </div>
+
+            <div id="questiontw">
+              <p>When i'm around people, I still struggle feeling alone</p>
+              <label class="radio" for="q12a">
+                <input
+                  input
+                  type="radio"
+                  name="alone"
+                  id="q12a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q12b">
+                <input
+                  type="radio"
+                  name="alone"
+                  id="q12b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+          </div>
+
+            <div id="questionthi">
+              <p>I have put my friendships on the back burner.</p>
+              <label class="radio" for="q13a">
+                <input
+                  input
+                  type="radio"
+                  name="friendships"
+                  value="1"
+                  id="q13a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q13b">
+                <input
+                  type="radio"
+                  name="friendships"
+                  id="q13b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionfor">
+              <p>My tastes in audio/visual has turned "dark."</p>
+              <label class="radio" for="q14a">
+                <input
+                  input
+                  type="radio"
+                  name="dark"
+                  value="1"
+                  id="q14a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br />
+              <label class="radio" for="q14b">
+                <input
+                  type="radio"
+                  name="dark"
+                  id="q14b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+
+            <div id="questionfiv">
+              <p>
+                I feel lost & confused and unable to think through simple tasks
+              </p>
+              <label class="radio" for="q15a">
+                <input
+                  input
+                  type="radio"
+                  name="conf"
+                  value="1"
+                  id="q15a"
+                  value="1"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+
+                Yes</label
+              ><br/>
+              <label class="radio" for="q15b">
+                <input
+                  type="radio"
+                  name="conf"
+                  id="q15b"
+                  value="2"
+                  class="radio__input"
+                />
+                <div class="radio__radio"></div>
+                No
+              </label>
+              <br />
+            </div>
+              <button id="submit" type="submit">submit</button>
+            </div>
+          </form> 
+        
+
+          <button class="next" id="next">Next</button>
+        </section>
+      </section>
+      <section class="et-slide" id="tab-flexbox">
+        <h1>About us</h1>
+        
+      </section>
+      <section class="et-slide" id="tab-react">
+        <h1>Contact us</h1>
+        
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
